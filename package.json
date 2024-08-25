@@ -1,0 +1,40 @@
+{
+  "name": "lottery-rd",
+  "version": "1.0.0",
+  "description": "Lottery-RD es una libreria que te permite obtener los resultados de la lotería dominicana.",
+  "main": "/dist/lottery-rd.min.js",
+  "scripts": {
+    "build": "terser src/lottery-rd.js --compress --mangle --output dist/lottery-rd.min.js",
+    "test": "mocha test/*",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlsRemy/Lottery-RD.git"
+  },
+  "author": "Carlos Ismael .Y .R",
+  "license": "MIT",
+  "keywords": [
+    "api-lottery",
+    "lottery",
+    "lottery-rd",
+    "draw",
+    "web-scrapping",
+    "rd",
+    "dominican-developers",
+    "dominican-republic"
+  ],
+  "bugs": {
+    "url": "https://github.com/CarlsRemy/Lottery-RD/issues"
+  },
+  "homepage": "https://github.com/CarlsRemy/Lottery-RD#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "chai": "4.3.8",
+    "mocha": "^10.4.0",
+    "terser": "^5.31.0"
+  }
+}
